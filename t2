@@ -1,4 +1,6 @@
-import java.util.Random;
+package com.cc.Test;
+
+//import java.util.Random;
 import java.util.Scanner;
 
 public class Test2 {
@@ -12,6 +14,7 @@ public class Test2 {
     	for(int i=1;i<=10;i++){
 		System.out.println("第"+i+"次：");
 		Scanner sc=new Scanner(System.in);
+		try{
 		int ss=sc.nextInt();
 		if(ss < ra){
 			System.out.println("你猜的数字小了");
@@ -19,19 +22,21 @@ public class Test2 {
 			System.out.println("游戏结束，下次再努力吧！");
 			}
 		}
-			else if(ss > ra){
+		else if(ss > ra){
 				System.out.println("你猜的数字大了");
 				if(i==10){
 				System.out.println("游戏结束，下次再努力吧！");
 				}
-			}
-			else{
+		}
+		else{
 				System.out.println("恭喜你猜中了数字，数字是"+ra+"，一共猜了"+i+"次。");
 				break;
-			}
-			
 		}
-		
-		
+		}
+		finally{
+			sc.close();
+		}
+		}
 	}
 }
+
