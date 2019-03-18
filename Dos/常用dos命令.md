@@ -17,4 +17,3 @@ Cls 									清屏
 Ping 								  发送四个数据包测试  
 Ping –t								不停发送数据包测试  
 Ipconfig							查看所有ip网络配置  
-Dir c:\users\113961\desktop\abc>f:\abc.xls 将文件夹abc下面的所有文件(夹)名字生成excel
