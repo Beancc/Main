@@ -1,7 +1,7 @@
 # git安装
 首先下载并安装git，可以从官网进行下载，或者百度网盘链接：https://pan.baidu.com/s/1jGlFnuOrYyJ5rMl7bxpFgg ，提取码：nu6s  
-1.检验安装。安装后首先测试是否安装成功，对想要进行版本控制的文件右键，选择GIT Bash Here，输入git --version如果现实版本号，则安装成功  
+1.检验安装。安装后首先测试是否安装成功，对想要进行版本控制的文件（或者随便对任意文件）右键，选择GIT Bash Here，输入git --version如果能够显示版本号，则安装成功。注意此处code需要输入两个-，以免出现图示错误。  
 2.用户配置。需要配置个人用户名称和个人邮箱地址，作为git提交时的说明是谁做的提交，随更新内容被永久纳入历史记录中。
 两条语句分别是 git config --global user.name 'xxx'和  git config --global user.email xx@xxx.com
-需要注意的是这边都用了两个短横线，避免产生错误。
+需要注意的是这边同样用了两个短横线，避免产生错误。
 ![image找不到源](https://upload-images.jianshu.io/upload_images/16784779-3a8c1ba5453ad31f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
