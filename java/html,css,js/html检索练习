@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>技术部资料检索</title>
+<link href="images/Elogo.ico" rel="shortcut icon" />
+</head>
+<style>
+img{ border:none;}
+a{text-decoration:none} 
+a:visited {   
+font-size: 16px;   
+color: #000000;   
+text-decoration: none;   
+}   
+a:hover {   
+font-size: 16px;   
+color: #999999;   
+text-decoration: underline;   
+}  
+#red{color:#F00;}
+#green{color:#0F0}
+#blue{color:#00F;}
+.footer{
+	width:100%; 
+	position:fixed; 
+	left:0; 
+	bottom:0;
+}
+.top{
+	float: right;
+	align:right;
+}
+
+</style>
+
+<script>
+function jump(){
+	window.location.href="login.html"
+}
+function delay(){
+	location.href="main.html"
+}
+
+function go(){  
+location.href="https://www.baidu.com";   
+} 
+
+function no(){
+window.alert("该功能暂未启用！");
+<!--onclick="javascript:no()" -->
+}
+<!--onclick="location.href='regedit.html'" -->
+function test(){
+	window.confirm("此为确认框，请单击“确定”或“取消”。");
+	window.prompt("此为提示框，请输入数据");
+}
+
+function custom_close(){
+	        if(confirm("您确定要关闭本页吗？")){
+	        	
+	         window.opener=null;
+	         window.open('','_self');
+	         window.close();
+	        }
+	        else{
+	        	
+	        }
+	}
+	
+
+</script>
+
+<body><br>
+
+<input type="button" value="登陆" class="top" onclick="javascript:no()" onclick="javascript:jump()" >
+<input type="button" value="注册" class="top" onclick="javascrtpt:window.location.href='test.html'">&nbsp;
+<center>
+
+<a href="http://www.sunon-china.com" title="打开圣奥官网" target="_blank"><img alt="图片无法显示请联系技术部王聪" src="images/logo.png" width="500" height="300" ></a><br>
+<!--  
+<input type="text" placeholder="请输入关键词！" readonly="readonly">&nbsp;
+<input type="button" title="点击搜索" value="搜索"onclick="javascript:go()" class="预留"><br>
+-->
+
+<form name="te" id="te" action="http://localhost:8080/Csearch/regedit.html" method="get">
+
+<tr>
+	<input type="text" value="请输入关键词！" onfocus="if(this.value=='请输入关键词！')this.value='';" onblur="if(this.value==''){this.value='请输入关键词！';}">&nbsp;
+</tr>
+<tr>
+	<input type="submit" title="点击搜索" value="搜索" class="预留"><br>
+</tr>
+</form>
+
+<!--  
+<input type="text" value="请输入关键词！" name="test" onfocus="this.value=''" onblur="if(this.value==''){this.value='请输入关键词！';}" />&nbsp;
+<input type="button" title="点击搜索" value="搜索" class="预留"><br>
+-->
+<!--  
+<input type="button" name="close" value="关闭" onclick="javascript:custom_close()" />
+-->
+
+<div style="" class="footer"><a href="https://www.baidu.com"  target="_blank">百度一下</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://weibo.com/2063592585/profile?rightmod=1&wvr=6&mod=personnumber"  target="_blank">联系作者</a></div>
+
+</center>
+<!--  体验代码到期
+<div id="daiyanbao_com_content" closerate="2" playrate="0" style="position: fixed;_position: absolute;text-align: left;overflow: visible;bottom :0px;left:0px;display:block; z-index:999;"><script src="https://res.daiyanbao.com/freevideojs/307/2/15168268719.js"></script></div>
+-->
+<!-- 官网抄代码
+<div id="daiyanbao_com_content" style="position: fixed;_position: absolute;text-align: left;overflow: visible;bottom :0px;left:0px;display:block; z-index:999;" closerate="0" playrate="-2"><div id="dyb_loadding_4"><img src="//simg.daiyanbao.cn/img/loadding.gif"><br><span style="font-family:'Microsoft YaHei',SimHei,FangSong; font-size:16px;color:#5e5e5e;text-decoration: none;"><a href="http://www.daiyanbao.cn/?f" target="_blank" style="font-family:'Microsoft YaHei',SimHei,FangSong; font-size:16px;color:#5e5e5e;text-decoration: none;">代言宝</a>加载中</span></div><div id="dyb_sub_4" class="dyb_sub"></div><div id="dyb_close_4" class="dyb_close">关闭X</div><div id="dyb_play_btn_4" class="dyb-play-btn"></div><div id="dyb_ctl_4"><div class="dyb-video-timeline-bar"><div id="dyb_timeline_passd_4" class="dyb-video-timeline-passed" style="width: 34.2743%;"></div></div><span class="dyb-video-timetip">9.42/27.49</span><a class="dyb-video-timebrand" href="http://www.daiyanbao.cn/?f2" target="_blank">代言宝视频</a></div><video id="dyb_tmp_video_4"><source src="http://b.img.daiyanbao.cn/images/freev/base/1/301.alpha.webm" type="video/webm"></video><div id="dyb_menu_4"><a class="dyb_subitem dyb_submenu_4" href="http://www.daiyanbao.cn/?f5" target="_blank" style="color: rgb(51, 51, 51); background-color: rgb(240, 240, 240);">代言宝视频</a><a class="dyb_subitem" style="color: rgb(51, 51, 51); background-color: rgb(240, 240, 240);">关闭视频</a></div></div>
+ 
+<div id="daiyanbao_com_content" style="position: fixed;_position: absolute;text-align: right;overflow: visible;bottom :0px;right:0px;display:block; z-index:999;" closerate="0" playrate="-2"><div id="dyb_loadding_4"><br><span style="font-family:'Microsoft YaHei',SimHei,FangSong; font-size:16px;color:#5e5e5e;text-decoration: none;"></span></div><div id="dyb_sub_4" class="dyb_sub"></div><div id="dyb_play_btn_4" class="dyb-play-btn"></div><div id="dyb_ctl_4"><div class="dyb-video-timeline-bar"><div id="dyb_timeline_passd_4" class="dyb-video-timeline-passed" style="width: 34.2743%;"></div></div><span class="dyb-video-timetip"></span></div><video id="dyb_tmp_video_4"><source src="http://b.img.daiyanbao.cn/images/freev/base/1/301.alpha.webm" type="video/webm"></video></div>
+ -->
+<div id="daiyanbao_com_content" style="position: fixed;_position: absolute;text-align: left;overflow: visible;bottom :0px;left:0px;display:block; z-index:999;" closerate="0" playrate="-2"><div id="dyb_loadding_2"><br><span style="font-family:'Microsoft YaHei',SimHei,FangSong; font-size:16px;color:#5e5e5e;text-decoration: none;"></span></div><div id="dyb_sub_2" class="dyb_sub"></div><div id="dyb_play_btn_2" class="dyb-play-btn"></div><div id="dyb_ctl_2"><div class="dyb-video-timeline-bar"><div id="dyb_timeline_passd_2" class="dyb-video-timeline-passed" style="width: 83.5656%;"></div></div><span class="dyb-video-timetip"></span></div><video id="dyb_tmp_video_2" autoplay="autoplay"><source src="http://b.img.daiyanbao.cn/images/free/gn2015/1/1.alpha.webm" type="video/webm"></video></div>
+
+</body>
+</html>
