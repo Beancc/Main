@@ -5,7 +5,7 @@
 alter session set nls_date_language='AMERICAN';  
 alter session set nls_timestamp_format = 'YYYY-MM-DD HH24:MI:SS.FF';  
 ```
-查看回话参数：
+查看会话参数：
 ```
 select * from nls_session_parameters where parameter='NLS_DATE_LANGUAGE'
 ```
