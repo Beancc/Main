@@ -16,4 +16,6 @@ Jad反编译工具可以在地址下载：[Jad](https://varaneckas.com/jad/)
 #### 6、设置class文件默认打开方式
 将下图中两项的默认打开方式设置为：JadClipse Class FileViewer （default）
 <img alt="错误提示" src="https://upload-images.jianshu.io/upload_images/17736870-e58a8e0f7117bbe1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">   
-至此，反编译插件工具安装完毕，可以在eclipse里面直接查看.class文件了。
+至此，反编译插件工具安装完毕，可以在eclipse里面直接查看.class文件了。  
+  
+原文链接：https://www.cnblogs.com/xxj-bigshow/p/7495260.html
