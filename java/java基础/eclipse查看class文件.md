@@ -4,6 +4,7 @@
 Jadclipse插件为Eclipse插件，可以在地址下载：  [Jadclipse](http://jadclipse.sourceforge.net/wiki/index.php/Main_Page) 
 #### 2、下载Jad反编译工具
 Jad反编译工具可以在地址下载：[Jad](https://varaneckas.com/jad/)  
+依照惯例放上两个软件的网盘地址链接：https://pan.baidu.com/s/1G1SxMeJTkZE2CNPvZqU2-g  提取码：3xrp   
 （注：官网下载时发现3.3版本说明支持eclipse3.3，实际使用时用eclipseMars（4.5版本）可以使用）  
 #### 3、将Jadclipse放入Eclipse插件目录下
 我下载的版本为net.sf.jadclipse_3.3.0.jar，然后将该jar放到D:\software\eclipse-jee-kepler-R-win32\eclipse\plugins目录下。  
