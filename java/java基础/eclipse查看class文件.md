@@ -1,0 +1,2 @@
+# Eclipse通过安装Jadclipse插件直接查看class文件的方法  
+为了查看.class文件，有一个好用的工具是jd-gui，但是使用eclipse开发时引入的jar包，通常习惯使用ctrl+鼠标左键的方式点击方法进入类。这时如果你导入的jar包没有导入source源码的话，自然是无法查看了。这里推荐一个利用反编译插件实现查看class源码的方法。
