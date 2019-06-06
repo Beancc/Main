@@ -11,3 +11,8 @@ Jad反编译工具可以在地址下载：Jad
 将第二步下载的Jad压缩包解压，然后将jad.exe放入%JAVA_HOME%/bin目录（其实，存放路径无所谓，在eclipse中指名地址即可）  
 #### 5、设置Eclipse
 上面几步设置好后，重新打开eclipse，然后打开：Window->Preferences->Java->JadClipse，做如下设置：
+<img alt="错误提示" src="https://upload-images.jianshu.io/upload_images/17736870-d1d6a9c33237e1b6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">    
+#### 6、设置class文件默认打开方式
+将下图中两项的默认打开方式设置为：JadClipse Class FileViewer （default）
+<img alt="错误提示" src="https://upload-images.jianshu.io/upload_images/17736870-e58a8e0f7117bbe1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"> 
+至此，反编译插件工具安装完毕，可以在eclipse里面直接查看.class文件了。
