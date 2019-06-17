@@ -7,7 +7,7 @@ Jad反编译工具可以在地址下载：[Jad](https://varaneckas.com/jad/)
 依照惯例放上两个工具的网盘地址链接：https://pan.baidu.com/s/1G1SxMeJTkZE2CNPvZqU2-g  提取码：3xrp   
 （注：官网下载时发现3.3版本说明支持eclipse3.3，实际使用时用eclipseMars（4.5版本）可以使用）  
 #### 3、将Jadclipse放入Eclipse插件目录下
-我下载的版本为net.sf.jadclipse_3.3.0.jar，然后将该jar放到D:\software\eclipse-jee-kepler-R-win32\eclipse\plugins目录下。  
+这里下载的版本为net.sf.jadclipse_3.3.0.jar，然后将该jar放到自己的Eclipse目录下D:\Eclipse\eclipse\plugins目录下。  
 #### 4、将Jad工具放到%JAVA_HOME%/bin目录下
 将第二步下载的Jad压缩包解压，然后将jad.exe放入%JAVA_HOME%/bin目录（其实，存放路径无所谓，在eclipse中指名地址即可）  
 #### 5、设置Eclipse
