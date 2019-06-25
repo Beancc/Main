@@ -21,8 +21,6 @@
  3.`Alter  table  student  change+旧列名+新列名+新列名属性`//更改列名  
  4.`Alter  table  student  modify+列名+新列名属性`//更改列属姓  
  5.`Alter  table  student  rename  to+新表名`  //更改表名
-* 备份表`Create  table  studentbak  as  select  *  from  student`
-* 备份表插入`Insert  into 新表 select  *  from  旧表`
 * 查找  
  1.`Select  *  from  student  where  name like"li%"`  //模糊查找名字li某  
  2.`Select  *  from  student  where  name like"li_i"`  //模糊查找名字li某i  
@@ -30,6 +28,13 @@
  4.`Select  *  from  student  where  birth  between''and''`  //生日在某个区间内   
  5.`Select  *  from  student  where  birth  is  not""`  //查询不是  
  6.`Select  *  from  student  where  birth  !=""`  //查询不等于  
- 7.`Select  *  from  student  where  class=in（5,6,7,8,）`//班级是5,6,7,8班
-
+ 7.`Select  *  from  student  where  class=in（5,6,7,8,）`//班级是5,6,7,8班  
+### 操作语句
+* 备份表`Create  table  studentbak  as  select  *  from  student`
+* 备份表插入`Insert  into 新表 select  *  from  旧表`
+* 新建索引`Create  index  index_name on student(name)`  
+* 显示索引`Show  index  from  student `  
+* 删除索引`Drop  index  from  student`  
+* 导出`Select * from student into outfile"d:\xx.txt"`  
+* 导入*`Load  datainfile"d:\xxx.txt"  into  table  student`
 
