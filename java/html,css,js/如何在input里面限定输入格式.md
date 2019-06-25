@@ -17,5 +17,7 @@
 `<input onkeyup="value=value.replace(/[^\w\.\/]/ig,'')">`
 * input仅限输入限制数量
 `<input maxlength="30">`
-* input禁止输入中文  
+* input禁止输入中文
 `<input type="text" onkeyup="value=value.replace(/[\u4e00-\u9fa5]/ig,'')"/> `
+* input禁止右键菜单粘贴
+`<input type="text" onkeydown="fncKeyStop(event)" onpaste="return false" oncontextmenu = "return false">`
