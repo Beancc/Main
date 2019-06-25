@@ -5,7 +5,6 @@
 `<input type="text" onkeyup="this.value=this.value.replace(/[^a-zA-Z]/g,'')"> `
 * input仅限输入数字代码(小数点也不能输入)
 `<input onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">  `
-* inpt onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">  `
 * inpuut仅限输入数字和小数点的写法
   1. 方法一：`<input onkeyup="if(isNaN(value))execCommand('undo')" onafterpaste="if(isNaN(value))execCommand('undo')">`  
   2. 方法二：`<input name=txt1 onchange="if(/\D/.test(this.value)){alert('仅限输入数字');this.value='';}">`  
