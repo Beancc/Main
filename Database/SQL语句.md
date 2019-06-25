@@ -1,5 +1,5 @@
-## 基础数据库操作语言  
-### 常用语句  
+## 常用数据库操作语言  
+### 基础语句  
 * 新建数据库 `Create  database  xx;`  
 * 查看数据库 `Show databases;`  
 * 使用表 Use `xx;  `  
@@ -16,11 +16,11 @@
 * 新建表（设置不为空自动增长空表默认填充） `Create  table 表名(id int not null primary key auto_increament,列名 char(32),列名 char(20),列名 char(32),列名 varchar(32),列名 varchar(32) default “缺省值”);`  
 * 选择性插入 `Insert 表名(id,name,adress) values(‘’,’’,’’);`  
 * 更改表的属性  
- 1.Alter  table  student  add+列名+列名属性;（after列）；//新增列  
- 2.Alter  table  student  drop + 列名//删除列  
- 3.Alter  table  student  change+旧列名+新列名+新列名属性；//更改列名  
- 4.Alter  table  student  modify+列名+新列名属性；//更改列属姓  
- 5.Alter  table  student  rename  to+新表名；  //更改表名
+ 1.`Alter  table  student  add+列名+列名属性;（after列）`//新增列  
+ 2.`Alter  table  student  drop + 列名`//删除列  
+ 3.`Alter  table  student  change+旧列名+新列名+新列名属性`//更改列名  
+ 4.`Alter  table  student  modify+列名+新列名属性`//更改列属姓  
+ 5.`Alter  table  student  rename  to+新表名`  //更改表名
 * 备份表`Create  table  studentbak  as  select  *  from  student`
 * 备份表插入`Insert  into 新表 select  *  from  旧表`
 * 查找  
