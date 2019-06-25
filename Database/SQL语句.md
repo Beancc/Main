@@ -29,6 +29,7 @@
  5.`Select  *  from  student  where  birth  is  not""`  //查询不是  
  6.`Select  *  from  student  where  birth  !=""`  //查询不等于  
  7.`Select  *  from  student  where  class=in（5,6,7,8,）`//班级是5,6,7,8班  
+* 更改`update student set name =replace(name,'LI','Li')`
 ### 操作语句
 * 备份表`Create  table  studentbak  as  select  *  from  student`
 * 备份表插入`Insert  into 新表 select  *  from  旧表`
