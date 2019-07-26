@@ -5,7 +5,7 @@
 * 使用表 Use `xx;  `  
 * 查看表目录 `show  tables;`  
 * 查看表结构 `Descstudent;`  
-* 增  `Insert into  表名 values(‘’,’’,’’,’’,’’,)`  
+* 增  `Insert into  表名 values('','','','','','')`  
 * 删  `Delete  from  表名 where 条件`  
 * 改  `Update  student  set  +修改的新值  where  条件`  
 * 查  `select * from 表名 where 条件` 
