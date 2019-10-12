@@ -36,5 +36,7 @@
 * 显示索引`Show  index  from  student `  
 * 删除索引`Drop  index  from  student`  
 * 导出`Select * from student into outfile"d:\xx.txt"`  
-* 导入*`Load  datainfile"d:\xxx.txt"  into  table  student`
+* 导入`Load  datainfile"d:\xxx.txt"  into  table  student`  
+* 删除主键`ALTER TABLE 表名 DROP PRIMARY KEY`  
+* 新增主键`ALTER TABLE 表名 ADD constraint pk_name PRIMARY KEY (`id`) enable validate`
 
