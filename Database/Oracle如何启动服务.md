@@ -1,4 +1,7 @@
 ## Oracle启动的时候需要启动的服务和各服务的意义如下：  
+#### 备注前言：  
+SID - 数据库标识  
+HOME_NAME - Oracle Home名称，如OraHome92、OraHome81
 #### 1. OracleServiceSID  
 数据库服务，这个服务会自动地启动和停止数据库。如果安装了一个数据库，它的缺省启动类型为自动。服务进程为ORACLE.EXE，参数文件initSID.ora，日志文件SIDALRT.log，控制台SVRMGRL.EXE、SQLPLUS.EXE。  
 #### 2. OracleHOME_NAMETNSListener
