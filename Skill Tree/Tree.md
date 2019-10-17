@@ -9,11 +9,26 @@
 >> #### 7. Json  
 >> #### 8. Jquery  
 >> #### 9. 正则表达式  
->> #### 10. Webservice接口
+>> #### 10. Webservice接口  
+---  
+> ## Spring  
+>> #### 1. beans  
+>> #### 2. context  
+>> #### 3. transaction  
+>> #### 4. MVC  
+---  
+> ## Mybatis  
+---  
+> ## 微服务  
+>> #### 1. SpringBoot  
+>> #### 2. SpringCloud  
+>> #### 3. Docker  
+---
 > ## 数据库 
 >> #### 1. 分库分表中间件  
 >>> * #### sharding-jdbc  
->>> * #### mycat 
+>>> * #### mycat  
+---  
 > ## 七大算法  
 >> #### 1. 贪心算法  
 >> #### 2. 分治算法
@@ -39,20 +54,7 @@
 >> #### 4. 图  
 >> #### 5. 散列表  
 ---  
-> ## 设计模式
----  
-> ## Spring  
->> #### 1. beans  
->> #### 2. context  
->> #### 3. transaction  
->> #### 4. MVC  
----  
-> ## Mybatis  
----  
-> ## 微服务  
->> #### 1. SpringBoot  
->> #### 2. SpringCloud  
->> #### 3. Docker 
+> ## 设计模式 
 ---  
 > ## 分布式  
 >> #### 1. Zookeeper（分布式架构基石）  
