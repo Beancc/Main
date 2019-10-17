@@ -43,15 +43,20 @@
 > ## 设计模式
 ---  
 > ## Spring  
----
+>> #### 1. beans  
+>> #### 2. context  
+>> #### 3. transaction  
+>> #### 4. MVC
 > ## Mybatis  
 ---  
 > ## 分布式  
->> #### 1. Zookeeper  
->> #### 2. Dubbo  
->> #### 3. Redis  
->> #### 4. MongoDB  
->> #### 5. Nginx  
+>> #### 1. Zookeeper（分布式架构基石）  
+>> #### 2. Dubbo（服务框架负载均衡）  
+>> #### 3. RabbitMQ（消息中间件）
+>> #### 4. Redis（分布式缓存）  
+>> #### 5. MongoDB（数据存储）  
+>> #### 6. Nginx（后台服务）  
+>> #### 7. Netty（高性能NIO框架）
 ---  
 > ## 微服务  
 >> #### 1. SpringBoot  
