@@ -27,5 +27,5 @@ root     15187 14735  0 15:13 pts/0    00:00:00 grep java
 ```
 * #### tomcat域名映射。还是需要打开apache-tomcat-8.5.47/conf/server.xml，进行以下步骤配置  
 1. ##### 将端口号改为80 `<Connector port="80" protocol="HTTP/1.1" connectionTimeout="20000" redirectPort="8443" />`  
-2. ##### 找到`<Engine name="Catalina" defaultHost="ccadd.cn">`标签，将属性"defaultHost"的值设为项目的域名 `<Engine name="Catalina" defaultHost="ccadd.cn">`  
+2. ##### 找到`<Engine>`标签，将属性"defaultHost"的值设为项目的域名 `<Engine name="Catalina" defaultHost="ccadd.cn">`  
 3. ##### 找到我们上一条新添加的`<Host>`，将其中的`name` 值由ip地址修改为项目的域名 `name="ccadd.cn"`
