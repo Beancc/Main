@@ -18,10 +18,14 @@ Djava.io.tmpdir=/root/apache-tomcat-8.5.47/temp org.apache.catalina.startup.Boot
 ```
 root     15187 14735  0 15:13 pts/0    00:00:00 grep java
 ```
-* #### 想要在tomcat部署静态网页，需要打开apache-tomcat-8.5.47/conf/server.xml，在`<Engine></Engine>`之间再添加一个`<Host></Host>`如下：其中`name`输入云服务器的ip地址，`docBase`输入apache-tomcat-8.5.47/webapps下面新建的文件夹名称
+* #### tomcat部署静态网页。需要打开apache-tomcat-8.5.47/conf/server.xml，在`<Engine></Engine>`之间再添加一个`<Host></Host>`如下：其中`name`输入云服务器的ip地址，`docBase`输入apache-tomcat-8.5.47/webapps下面新建的文件夹名称
 ```
 <Host name="106.13.190.201" debug="0" appBase="webapps" unpackWARs="true" autoDeploy="true" xmlValidation="false" xmlNamespaceAware="false">
 <Context path="" docBase="examples" debug="0" reloadable="true" crossContext="true"/>
 <Logger className="org.apache.catalina.logger.FileLogger" directory="logs" prefix="tot_log." suffix=".txt" timestamp="true"/>
 </Host>
 ```
+* #### tomcat域名映射。还是需要打开apache-tomcat-8.5.47/conf/server.xml，进行以下步骤配置  
+1. ##### 将端口号改为80 `<Connector port="80" protocol="HTTP/1.1" connectionTimeout="20000" redirectPort="8443" />`  
+2. ##### 找到`<Engine>`标签，将属性"defaultHost"的值设为项目的域名 `<Engine name="Catalina" defaultHost="ccadd.cn">`  
+3. ##### 找到我们上一条新添加的`<Host>`，将其中的`name` 值由ip地址修改为项目的域名 `name="ccadd.cn"`
