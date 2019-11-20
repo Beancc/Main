@@ -15,6 +15,7 @@
 | Eclipse 4.5 | Mars     | 火星             | 2015     |
 | Eclipse 4.6 | Neon     | 霓虹灯           | 2016     |
 | Eclipse 4.7 | Oxygen   | 氧气             | 2017     |  
+| Eclipse 4.8 | Photon   | 光子             | 2018     |
 
 以上是各版本eclipse的版本号，代号和发行日期，根据官网说法，4.6(Neon)需要1.8以上，4.5(Mars)和4.4(Luna)需要1.7以上，4.3(Kepler)需要1.6以上。
 所以如果你的项目是需要jdk1.6的话，那么你能用到最高版本的eclipse就是开普勒版了。
