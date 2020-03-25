@@ -1,4 +1,4 @@
-* ##### 在Spring中IOC是一个很重要的设计原则，叫做控制反转。
+* ##### 在Spring中IOC是一个很重要的设计原则，叫做控制反转。啥是控制反转呢，简单的说就是将实现类交给spring管理，将控制权反转给spring。
 * ##### 为什么要使用IOC呢，往下看：  
 > ##### 最基本的实例化如：`UserDao userDao = new UserDao();`
 > ##### 面向接口的实例化：`UserDao userDao = new UserDaoImpl();`
