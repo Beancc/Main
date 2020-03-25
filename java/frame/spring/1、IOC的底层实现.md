@@ -2,7 +2,7 @@
 * ##### 为什么要使用IOC呢，往下看：  
 > ##### 最基本的实例化如：`UserDao userDao = new UserDao();`
 > ##### 面向接口的实例化：`UserDao userDao = new UserDaoImpl();`
-> ##### 使用Spring编程工厂+反射+配置(applicationContext.xml)：
+> ##### 使用Spring实例化(工厂+反射+配置applicationContext.xml)：
 ```
 ApplicationContext applcationContext = new ClassPathXmlApplicationContext(applicationContext.xml);
 UserDao userDao = (UserDao)applicationContext.getBean("UserDao");
