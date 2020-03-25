@@ -7,4 +7,4 @@
 ApplicationContext applcationContext = new ClassPathXmlApplicationContext(applicationContext.xml);
 UserDao userDao = (UserDao)applicationContext.getBean("UserDao");
 ```  
-* ##### 可以看出来，使用面向接口的好处就是可以多态，和我们最熟悉的`List list = new ArrayList();`一个道理。而使用Spring的好处是减少接口和实现类的耦合，这样可以在切换底层实现类的时候，避免修改源代码。
+* ##### 可以知道，使用面向接口的好处就是可以多态，和我们最熟悉的`List list = new ArrayList();`一个道理。而使用Spring的好处是减少接口和实现类的耦合，这样可以在切换底层实现类的时候，避免修改源代码。
