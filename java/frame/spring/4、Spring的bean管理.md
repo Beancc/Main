@@ -1,4 +1,5 @@
-* ##### spring的属性注入，给Bean中的属性设置值（Spring当中属性注入支持前两种）  
+### spring的属性注入
+* ##### 给Bean中的属性设置值有三种方式（Spring当中属性注入支持前两种）  
   * ##### 构造方法方式  
   ```
   public class User{
@@ -10,6 +11,11 @@
     }
   }
   ```
+  ```
+  <bean id="" class="">
+    <construct-arg name="" value="">
+  </bean>
+  ```
   * ##### set方法方式
   ```
   public class User{
@@ -18,6 +24,11 @@
       this.name = name;
     }
   }
+  ```
+  ```
+  <bean id="" class="">
+    <property name="" value="">
+  </bean>
   ```
   * ##### 接口注入
   ```
