@@ -16,5 +16,3 @@
   > request：应用Web，Spring创建类并将类存入到request范围中  
   > session：应用Web，Spring创建类并将类存入到session范围中  
   > globalsession：应用Web，必须在porlet环境下使用，如果没有这个环境则等同于session
-* ##### spring的属性注入  
-  * ####
