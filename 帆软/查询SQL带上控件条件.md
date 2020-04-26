@@ -1,5 +1,9 @@
-#### 帆软普通报表，是比较依赖于查询条件的，那么查询条件如何体现在查询SQL里面呢：  
-* ##### 首先对新增加的查询控件名称进行重命名，比如说开始时间命名为bd，结束时间为ed，修改地方如下图所示，查询条件的一个例子就可以写成如下代码所示  
+#### 帆软普通报表，是比较依赖于查询条件的，那么查询控件上面的条件如何体现在查询SQL里面呢： 
+* ##### 首先肯定要有一个查询按钮，新建一个按钮，对添加的按钮新增点击事件，js代码如下：
+```
+_g().parameterCommit();
+```
+* ##### 接下来说一下如何实现查询空间选择的条件：首先对新增加的查询控件名称进行重命名，比如说开始时间命名为bd，结束时间为ed，修改地方如下图所示，查询条件的一个例子就可以写成如下代码所示  
 ![](https://github.com/Beancc/Main/blob/master/img/%E5%B8%86%E8%BD%AF/%E6%8E%A7%E4%BB%B6%E6%9F%A5%E8%AF%A21.png)
 ```
 select initiator_Type,count(initiator_Type) 
@@ -13,9 +17,9 @@ select *
 from IQC_BADNESS b
 left join IQC_IIAR i on i.inspection_No = b.inspection_No 
 where  
-	b.check_Bom_Property is not null 
-	and i.inspection_Conclusion='不合格'
-	and i.resident_Suppliers != '是'
+  b.check_Bom_Property is not null 
+  and i.inspection_Conclusion='不合格'
+  and i.resident_Suppliers != '是'
   ${if(len(yyzx) == 0,""," and i.base_name in ('" + yyzx + "')")}  
   and to_char(i.incoming_Date,'yyyy-mm-dd') between '${bd}' and '${ed}'
 group by b.check_Bom_Property
