@@ -3,7 +3,7 @@
 ```
 _g().parameterCommit();
 ```
-* ##### 接下来说一下如何实现查询空间选择的条件：首先对新增加的查询控件名称进行重命名，比如说开始时间命名为bd，结束时间为ed，修改地方如下图所示，查询条件的一个例子就可以写成如下代码所示  
+* ##### 接下来说一下如何实现查询控件选择的条件：首先对新增加的查询控件名称进行重命名，比如说开始时间命名为bd，结束时间为ed，修改地方如下图所示，查询条件的一个例子就可以写成如下代码所示  
 ![](https://github.com/Beancc/Main/blob/master/img/%E5%B8%86%E8%BD%AF/%E6%8E%A7%E4%BB%B6%E6%9F%A5%E8%AF%A21.png)
 ```
 select initiator_Type,count(initiator_Type) 
