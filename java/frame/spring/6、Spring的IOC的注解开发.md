@@ -6,3 +6,10 @@
   > ##### 引入约束：引入Context约束，在Spring包下面找（spring-framework-4.2.4.RELEASE/docs/spring-framework-reference/html/xsd-configuration.html）  
   > ##### 
 * ##### 配置组件扫描
+  > @Component组件：有三个衍生注解(功能类似)
+  > @Controller ：Web层
+  > @Service ：Service层
+  > @Repository ：Dao层
+* ##### 属性注入的注解
+  > 普通属性 ： @Value
+  > 对象属性 ： @Autowired
