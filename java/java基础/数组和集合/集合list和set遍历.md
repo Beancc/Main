@@ -25,3 +25,5 @@ while(it.hasNext()){
     System.out.println(it.next());
 }
 ```
+
+### set集合有以上2和3常用的遍历方式，至于为什么没有1普通遍历方式，原因是Set是无序的，不能这样实现遍历。
