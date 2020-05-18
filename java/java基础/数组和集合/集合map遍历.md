@@ -32,3 +32,10 @@ while(it.hasNext()){
     System.out.println(it.next());
 }
  ```
+4. ##### 利用entry的foreach增强型for循环遍历
+```
+for(Map.Entry<Integer,String> entry:map.entrySet()){
+    System.out.println(entry);
+}
+```
+* ##### 注意比较第2种方法和第4种方法。其中第2种方法利用的是将所有的keys先存入set集合，然后遍历set集合获得key，再通过`value=get(key)`的方法获取，而4中的方法利用的entrySet是将键值对存入到set集合，这时候打印输出entry也可以很明显看出来输出的是键值对。
