@@ -3,4 +3,4 @@
 |                       | 调用非静态方法demo2()                        | 调用静态方法staticDemo2() |
 | --------------------- | -------------------------------------------- | ------------------------- |
 | 非静态方法demo1()     | 1.demo2()<BR>2.this.demo2()<BR>3.xxx.demo2() | staticDemo2()             |
-| 静态方法staticDemo1() | xxx.demo2();                                 | staticDemo2()             |
+| 静态方法staticDemo1() | xxx.demo2()                                 | staticDemo2()             |
