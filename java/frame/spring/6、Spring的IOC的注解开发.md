@@ -14,7 +14,7 @@
 * ##### 属性注入的注解  
   > @Value ：普通属性   
   > @Autowired ： 设置对象类型的属性的值，但是按照类型完成属性注入。  
-  > @Qualifier : 必须让@ Autowired注解和@ Qualifier一起使用完成按照名称属性注入。
+  > @Qualifier : 必须让@ Autowired注解和@ Qualifier一起使用完成按照名称属性注入。  
   > @Resource(name = "") : 对象属性的注入，按照名称完成属性注入（非spring包的，是spring规范的），替换上面两个。
 * ##### Bean的其他属性的注解  
   > @PostStruct : 初始化方法，相当于配置了init-method
