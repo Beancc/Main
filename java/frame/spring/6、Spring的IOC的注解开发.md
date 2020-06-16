@@ -17,7 +17,7 @@
   > @Qualifier : 必须让@ Autowired注解和@ Qualifier一起使用完成按照名称属性注入。  
   > @Resource(name = "") : 对象属性的注入，按照名称完成属性注入（非spring包的，是spring规范的），替换上面两个。
 * ##### Bean的其他属性的注解  
-  > @PostStruct : 初始化方法，相当于配置了init-method
+  > @PostStruct : 初始化方法，相当于配置了init-method  
   > @PreDestroy : 销毁方法，相当于配置了destroy-method
   > @Scope : 作用范围(默认singleton，还有prototype，request，session，globalsession)
 * ### XML开发和注解开发的区别
