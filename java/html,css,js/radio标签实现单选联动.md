@@ -26,7 +26,7 @@ function checkradio(obj){
 ##### 很简单的实现了这个功能，因为这里用的struts2的radio的标签，如果是直接input的radio属性，稍微改一下代码就可以实现，具体就不在此赘言。
 
 ### 2.上面的方式有一个小缺陷，就是两行单选框需要两个字段来保存，否则即使页面出现了单选联动，但是因为没有没有字段来储存，页面保存刷新后还是不显示单选框被选中。时隔一年又有类似的需求，但这次要求不能添加字段，想了很久才搞定，其实也很简单，同样是相互赋值的方式，但是给他们都增加一个value，显示实际存在的字段的值，就可以实现了。新需求的页面代码简化后如下：
-```
+```html
 <tr>html
   <td>
   <s:radio list="#{'是':'是','否':'否'}" theme="simple" name="isSettle" onclick="copyis(this)" value="#{isSettle }"/>
@@ -52,9 +52,10 @@ function copyis(obj){
         document.getElementsByName("isSettle1")[0].checked=obj.checked 
         document.getElementsByName("isSettle2")[0].checked=obj.checked 
     }else if(isSettle=='否'){
-      document.getElementsByName("isSettle")[1].checked=obj.checked 
+        document.getElementsByName("isSettle")[1].checked=obj.checked 
         document.getElementsByName("isSettle1")[1].checked=obj.checked 
         document.getElementsByName("isSettle2")[1].checked=obj.checked 
     }
   }
 ```
+#### 对比第一种方法，就是在radio里面多了一个value，但是这里是` value="#{isSettle }"`，用的是`#`而不是`$`，就这么一个地方，因为没考虑到这一点，卡了良久。
