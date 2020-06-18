@@ -25,8 +25,8 @@ $("#test").show();
 * ##### 开发需求：
 其次因为这次需求要再新增加两个流程页面，而且页面要做相应调整，这里就牵扯到一个我需要写新的`<input>`框，也就是正常情况下要新增字段，但是要求不能新增字段，而不新增字段却又两个同名的input的时候，每次保存都会保存两个input框里面的东西，造成的后果就是重复保存。这里想了一个办法就是这两个输入框互相赋值，但是显示的还是显示有保存的字段值。简化后的页面如下：
 ```html
-  <input placeholder="接收数量" id="acceptNum" name="acceptNum" value="${acceptNum}" onkeyup="copyan();"/>
-  <input placeholder="接收数量" id="acceptNum1" name="acceptNum1" value="${acceptNum}" onkeyup="copyan1();"/>
+<input placeholder="接收数量" id="acceptNum" name="acceptNum" value="${acceptNum}" onkeyup="copyan();"/>
+<input placeholder="接收数量" id="acceptNum1" name="acceptNum1" value="${acceptNum}" onkeyup="copyan1();"/>
 ```
 js实现如下：
 ```javascript
@@ -39,8 +39,8 @@ function copyan1(){
 ```
 然后想了想优化了一页面和js代码改为如下：
 ```html
-  <input placeholder="接收数量" id="acceptNum" name="acceptNum" value="${acceptNum}" onkeyup="copyan(this);"/>
-  <input placeholder="接收数量" id="acceptNum1" name="acceptNum1" value="${acceptNum}" onkeyup="copyan(this);"/>
+<input placeholder="接收数量" id="acceptNum" name="acceptNum" value="${acceptNum}" onkeyup="copyan(this);"/>
+<input placeholder="接收数量" id="acceptNum1" name="acceptNum1" value="${acceptNum}" onkeyup="copyan(this);"/>
 ```
 ```javascript
 function copyan(obj){
