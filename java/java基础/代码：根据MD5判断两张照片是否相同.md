@@ -90,3 +90,5 @@ public class Compare {
 
 ##### 代码参考地址：https://blog.csdn.net/zhijiandedaima/article/details/81331850
 ##### 图片参考地址：https://crypto.stackexchange.com/questions/1434/are-there-two-known-strings-which-have-the-same-md5-hash-value
+##### MD5解密(复杂密码要收费)：https://www.cmd5.com/
+##### MD5解密(不收费，每次都验证)：https://www.somd5.com/
