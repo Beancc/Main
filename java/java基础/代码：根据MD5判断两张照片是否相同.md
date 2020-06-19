@@ -72,15 +72,15 @@ public class Compare {
     }
     public static void main(String[] args) {
 
-//      https://crypto.stackexchange.com/questions/1434/are-there-two-known-strings-which-have-the-same-md5-hash-value
-                String image1 = "F:\\desktop\\ship.jpg";
-                String image2 = "F:\\desktop\\plane.jpg";
+//  https://crypto.stackexchange.com/questions/1434/are-there-two-known-strings-which-have-the-same-md5-hash-value
+        String image1 = "F:\\desktop\\ship.jpg";
+        String image2 = "F:\\desktop\\plane.jpg";
 
-                File file1 = new File(image1);
-                File file2 = new File(image2);
-                System.out.println(getFileMD5(file1).equals(getFileMD5(file2))?"两张图片MD5相同":"两张图片MD5不相同");
+        File file1 = new File(image1);
+        File file2 = new File(image2);
+        System.out.println(getFileMD5(file1).equals(getFileMD5(file2))?"两张图片MD5相同":"两张图片MD5不相同");
 
-            }
+    }
 
 }
 ```
