@@ -72,7 +72,7 @@ public class Compare {
     }
     public static void main(String[] args) {
 
-//        https://crypto.stackexchange.com/questions/1434/are-there-two-known-strings-which-have-the-same-md5-hash-value
+//      https://crypto.stackexchange.com/questions/1434/are-there-two-known-strings-which-have-the-same-md5-hash-value
                 String image1 = "F:\\desktop\\ship.jpg";
                 String image2 = "F:\\desktop\\plane.jpg";
 
