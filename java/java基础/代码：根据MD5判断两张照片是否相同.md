@@ -1,4 +1,5 @@
-##### 不同文件字符串的md5可能会相等的原因很简单，因为MD5是有限的，而字符串是无限的。今天参考了两个网站，用了以下程序比较了两张图片，果然MD5是相同的，感觉有点意思。代码在下面，比较的两张图片可以在代码中找到源网址。
+##### 每个文件都有一个“独一无二”的MD5，我们可以通过判断两个文件的MD5是否相等来判断这两个是否是同一个文件。然而：
+##### 不同文件字符串的md5也有可能会相同，其原因很简单，因为MD5是有限的，而字符串是无限的。今天参考了两个网站，用了以下程序比较了两张图片，果然MD5是相同的，感觉有点意思。代码在下面，比较的两张图片可以在代码中找到源网址。
 ```java
 import java.io.File;
 import java.io.FileInputStream;
@@ -83,6 +84,9 @@ public class Compare {
 
 }
 ```
+##### 综上所述：
+* ##### 相同MD5的两个文件未必是同一个文件
+* ##### 盗版别人的图片(?)等文件时用工具修改一下MD5成为自己的伪原创图片
 
 ##### 代码参考地址：https://blog.csdn.net/zhijiandedaima/article/details/81331850
 ##### 图片参考地址：https://crypto.stackexchange.com/questions/1434/are-there-two-known-strings-which-have-the-same-md5-hash-value
