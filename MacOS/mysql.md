@@ -13,4 +13,13 @@
 5. ##### 保存并关闭你的.bash_profile文件,输入`source .bash_profile`（更新刚配置的环境变量）。到此结束配置
 6. ##### 此时输入`mysql -u root -p`就会跳出来让你输入密码了，老规矩，输密码的时候没有任何显示。至此就全部OK了。
 
+注：我看了一些教程视频会建议使用mysql5.6，究其原因，在于5.5及之前的版本不能使用集群，而之后的新版本估计也没有研究过，但是既然有了新版本在安全性上更好，理应使用新版本。以上mysql资源版本是8.0版，使用时注意依赖配置的版本如下
+```xml
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.11</version>
+</dependency>
+```
+
 参考资料：https://blog.csdn.net/Mart1nn/article/details/85019561
