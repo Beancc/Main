@@ -25,5 +25,11 @@ while(it.hasNext()){
     System.out.println(it.next());
 }
 ```
+#### 4.lamda表达式方法。这是jdk1.8新特性的方法
+```
+list.forEach(lists -> {
+    System.out.println(lists);
+});
+```
 
-### set集合有以上2和3常用的遍历方式，至于为什么没有1普通for循环遍历方式，原因是Set是无序的，不能这样实现遍历。
+### set集合有以上2、3、4常用的遍历方式，至于为什么没有1普通for循环遍历方式，原因是Set是无序的，不能这样实现遍历。
