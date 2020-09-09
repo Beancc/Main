@@ -430,7 +430,7 @@ public class SecurityUtil {
 }
 ```
 
-
+```
 <br>
 1. 设置request的编码
 2. 获取验证码
