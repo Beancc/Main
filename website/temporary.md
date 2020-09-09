@@ -429,3 +429,30 @@ public class SecurityUtil {
     }  
 }
 ```
+
+
+<br>
+1. 设置request的编码
+2. 获取验证码
+3.判断程序生成的验证码和用户输入的验证码是否一致（从session中获取程序生成的验证码）
+> 不一致：给用户提示信息：验证码错误的request（跳转页面）
+> 一致：判断用户名密码是否正确，查询数据库判断。
+
+```
+1.图片的接口，get方法
+如，将生成的数字计算后放到stringbuilder里面如叫做checkCode_session，然后存入session
+如request.getSession().setAttribute("checkCode_session",checkCode_session);
+然后在提交的接口里面，进行判断，首先获取这个session
+ HttpSession session = request.getSession();
+ String checkCode_session = (String)session.getAttribute("checkCode_session");
+ 为了验证码安全设置为一次性验证码，以获取就删除sesssion的值
+ session.removeAttribute("checkCode_session");
+ 然后获取我后台的输入，如request.getParamer("checkCode");
+然后进行判断
+if(checkCode_session != null && checkCode_session.equals(checkCode)){
+
+}else{
+	request.setAttribute("cc_erroe","验证码错误，请重新输入");
+}
+
+```
