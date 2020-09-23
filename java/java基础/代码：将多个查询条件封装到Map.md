@@ -20,7 +20,8 @@ public list<XXXDTO> getInfomation(String id,String name,String xxx){
   List<XXXDTO> list = xxxDao.getXXX(id,name,xxx);
   for(XXXDTO item : list){
     ...
-    Long num = xxDao.getxx(item.getyy(),item.getzz());
+    String key = item.getyy()+"-"+item.getzz()
+    Long num = mep.get(key);
     ...
   }
   ...
