@@ -12,3 +12,10 @@ xxxxDTO.setInfo(json.toJSONString());
 ```java
 (String)JSON.parseObject(xxx.getInfo()).get("name");
 ```
+#### 这种方法有一点蠢的地方是我的json存很多值就要写很多put，其实可以把需要存的值写在DTO里面，方便修改和增加如：
+数据存：
+```java
+xxxxDTO.setName = xxx.getName();
+xxxxDTO.setCountryName = xxx.getCountryName();
+JSON.toJSONString(xxxxDTO);
+```
