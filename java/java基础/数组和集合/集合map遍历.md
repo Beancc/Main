@@ -12,6 +12,7 @@ for (int i = 1; i <= map.size(); i++) {
     System.out.println(map.get(i));
 }
 ```
+> 这种方法基本上没啥用，因为在实际环境中不会按序列添加map
 2. ##### 第二种是利用foreach增强型for循环遍历，但是因为是键值对存储，所以和list遍历稍有不同：
 ```
 for(Integer i : map.keySet()){
