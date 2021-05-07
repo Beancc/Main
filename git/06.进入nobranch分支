@@ -1,0 +1,3 @@
+### git push时出现: Everything up-to-date，主要原因有两个，一个是没有commit，这里就不说了。另一个就是分支切换到了no branch上。
+### 实际工作中遇到了这个问题，没有注意是哪一步操作导致，但是使用git branch可以看到当前分支是(no branch),这就导致无法commit和push，解决方案的话按照网友的说法是将当前分支(nobranch)版本号合并到你需要的分支上就好了。
+### 但是由于我直接切换到分支上导致找不到了，于是只能用另一种方式，找到local history，合并到需要的分支上。
