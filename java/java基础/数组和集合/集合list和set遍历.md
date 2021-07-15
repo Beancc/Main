@@ -33,3 +33,20 @@ list.forEach(lists -> {
 ```
 
 ### set集合有以上2、3、4常用的遍历方式，至于为什么没有1普通for循环遍历方式，原因是Set是无序的，不能这样实现遍历。
+
+### 将实体类的集合中的某个字段抽成新的集合：
+```
+List<Long> ids = xxDTOList.stream.map(xxDTO::getId).collect(Collectors.toList());
+```
+
+### 根据条件过滤
+```
+//要找出的年龄大小
+List<Integer> ageList = ...
+//需要被过滤的对象
+List<StudentDTO> studentDTOList = ...
+//根据第一个条件过滤
+List<StudentDTO> result = studentDTOList.stream().filter((StudentDTO s) -> ageList.contains(s.getAge())).collect(Collectors.toList());
+```
+
+
