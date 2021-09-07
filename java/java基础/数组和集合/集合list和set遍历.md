@@ -39,6 +39,12 @@ list.forEach(lists -> {
 List<Long> ids = xxDTOList.stream.map(xxDTO::getId).collect(Collectors.toList());
 ```
 
+
+### 将实体类的集合中的某个字段抽成新的去重集合：
+```
+List<Long> ids = xxDTOList.stream.map(xxDTO::getId).distinct().collect(Collectors.toList());
+```
+
 ### 根据条件过滤
 ```
 //要找出的年龄大小
