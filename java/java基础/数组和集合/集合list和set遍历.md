@@ -55,4 +55,14 @@ List<StudentDTO> studentDTOList = ...
 List<StudentDTO> result = studentDTOList.stream().filter((StudentDTO s) -> ageList.contains(s.getAge())).collect(Collectors.toList());
 ```
 
+### 判断自定义对象类型的集合中对象的值
+```
+if(studentList.stream().filter(s -> s.getStudentName().equals("王聪")).findAny().isPresent()){
+
+}
+然后用了以上代码idea编辑报黄，提示.filter后面的可以用anyMatch代替，于是查了一下怎么用改为如下语句：
+if(studentList.stream().anyMatch(s -> s.getStudentName().equals("王聪"))){
+
+}
+```
 
