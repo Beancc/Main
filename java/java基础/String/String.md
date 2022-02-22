@@ -8,3 +8,11 @@ List<String> strList = Arrays.asList("a", "b", "c");
     subStr.add(strData);
   }
 ```
+
+#### 2.如果对数字补齐位数，如1-20都补齐为两位，用String的format可以非常简单的实现。
+```java
+String.format("%02d", 8); //8为int型 
+// 0代表前面要补的字符 
+// 2代表字符串长度 
+// d表示参数为整数类型
+```
