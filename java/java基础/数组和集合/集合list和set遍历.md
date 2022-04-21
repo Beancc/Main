@@ -55,6 +55,22 @@ List<StudentDTO> studentDTOList = ...
 List<StudentDTO> result = studentDTOList.stream().filter((StudentDTO s) -> ageList.contains(s.getAge())).collect(Collectors.toList());
 ```
 
+### 排序，实际开发中发现树状结构也可以根据其中一个属性排序，如：
+```
+@Data
+public class Parent {
+    private String id;
+    private List<Children> children;
+}
+@Data
+public class Children {
+    private String name;
+    private Integer age;
+}
+List<Parent> list = xxxxx;
+list = list.stream().sorted(Comparator.comparing(v -> v.getChildren().get(0).getAge())).collect(Collectors.toList());
+```
+
 ### 判断自定义对象类型的集合中对象的值
 ```
 if(studentList.stream().filter(s -> s.getStudentName().equals("王聪")).findAny().isPresent()){
