@@ -8,6 +8,14 @@ List<String> strList = Arrays.asList("a", "b", "c");
     subStr.add(strData);
   }
 ```
+以下两种写法，1是使用commons-lang库写法，2是lambda表达式的写法，都更加简单
+```java
+StringUtils.join(list.toArray(), ",")
+
+list.stream().collect(Collectors.joining(","))
+
+```
+
 
 #### 2.如果对数字补齐位数，如1-20都补齐为两位，用String的format可以非常简单的实现。
 ```java
