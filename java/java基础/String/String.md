@@ -15,6 +15,7 @@ StringUtils.join(list.toArray(), ",")
 list.stream().collect(Collectors.joining(","))
 
 ```
+今天发现了一个更简单的方法，看了一下源码发现就是上面的1.8的方法的一个封装，直接`String.join(",", list)`就齐活。
 
 
 #### 2.如果对数字补齐位数，如1-20都补齐为两位，用String的format可以非常简单的实现。
