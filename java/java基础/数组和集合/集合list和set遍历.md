@@ -90,6 +90,8 @@ public Map<String, List<Student>> groupList(List<Student> students) {
 	return map;
 }
 
+//根据学生姓名进行分类并获取具体的字段(如根据学生姓名获取所有成绩)
+Map<String, List<String>> map = students.stream().collect(Collectors.groupingBy(Student::getName, Collectors.mapping(Student::getPrice, Collectors.toList())));
 
 ```
 
