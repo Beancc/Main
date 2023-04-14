@@ -82,6 +82,15 @@ if(studentList.stream().anyMatch(s -> s.getStudentName().equals("王聪"))){
 }
 ```
 
+### list根据主键转换成map
+```java
+List<TaskTagDictionary> taskTagList = this.listByIds(tagList);
+if(CollectionUtils.isEmpty(taskTagList)) {
+    return Collections.emptyMap();
+}
+return taskTagList.stream().collect(Collectors.toMap(TaskTagDictionary::getId, e -> e));
+```
+
 ### list根据某个属性分组
 ```java
 //根据学生姓名进行分类
