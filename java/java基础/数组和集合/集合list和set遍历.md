@@ -98,9 +98,14 @@ public Map<String, List<Student>> groupList(List<Student> students) {
 	Map<String, List<Student>> map = students.stream().collect(Collectors.groupingBy(Student::getName));
 	return map;
 }
+//假设需要简单排序（自然排序）
+TreeMap<String, List<Student>> sortedMap = students.stream().collect(Collectors.groupingBy(Student::getName, TreeMap::new, Collectors.toList()));
 
 //根据学生姓名进行分类并获取具体的字段(如根据学生姓名获取所有成绩)
 Map<String, List<String>> map = students.stream().collect(Collectors.groupingBy(Student::getName, Collectors.mapping(Student::getPrice, Collectors.toList())));
+//加入需要简单排序（自然排序）
+TreeMap<String, List<String>> sortedMap = students.stream().collect(Collectors.groupingBy(Student::getName, TreeMap::new, Collectors.mapping(Student::getPrice, Collectors.toList())));
+
 
 ```
 
